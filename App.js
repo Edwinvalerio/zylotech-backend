@@ -8,7 +8,7 @@ var mysql = require("mysql");
 var connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "199314edwin" //THIS IS YOUR SQL PASSWORD
+  password: process.env.MY_SQL_PASSWORD //REPLACE WITH YOUR SQL PASSWORD
   //   database: "dogApp"
 });
 
